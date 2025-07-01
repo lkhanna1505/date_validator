@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Validator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Future Date Validator</h1>
+        <p class="subtitle">Enter a date to validate</p>
+      </div>
+
+      <div class="current-info">
+        <div class="info-card">
+          <h3>Current Date & Time</h3>
+          <div id="currentDateTime" class="datetime-display"></div>
+        </div>
+      </div>
+
+      <div class="input-section">
+        <div class="input-container">
+          <label for="dateInput">Enter Date (max 12 characters)</label>
+          <input
+            type="text"
+            id="dateInput"
+            maxlength="12"
+            placeholder="e.g., 2025-08-15"
+          />
+          <div class="input-info">
+            <span id="charCount">0/12</span>
+          </div>
+        </div>
+
+        <button id="validateBtn" class="validate-btn">Validate Date</button>
+      </div>
+
+      <div id="result" class="result-container"></div>
+
+      <div class="info-section">
+        <h3>Valid Date Formats</h3>
+        <ul>
+          <li>YYYY-MM-DD (e.g., 2025-12-31)</li>
+          <li>MM/DD/YYYY (e.g., 12/31/2025)</li>
+          <li>DD-MM-YYYY (e.g., 31-12-2025)</li>
+          <li>MM-DD-YYYY (e.g., 12-31-2025)</li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
